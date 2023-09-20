@@ -1,0 +1,19 @@
+.hero_skel {
+    --height : 100vh;
+    height: var(--height);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 50% 100%, 0% 92%);
+}
+.skeleton-box.hero_skel .skeletons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: block;
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+}

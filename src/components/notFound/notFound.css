@@ -1,0 +1,15 @@
+.no_data {
+    text-align: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background: #f1f1f1;
+    position: fixed;
+    z-index: 9999999;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}

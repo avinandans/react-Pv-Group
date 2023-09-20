@@ -1,0 +1,109 @@
+.project-slider {
+    
+}
+.project-slider .item {
+    position: relative;
+    height: 100%;
+}
+.project-slider .item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 15/10;
+    border-radius: 2px;
+}
+.project-slider .item .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+    width: 100%;
+    z-index: 1;
+    background: var(--overlay);
+    transition: width 2s ease-in-out;
+}
+.project-slider .item .overlay h5 {
+    font-size: 20px;
+    color: var(--primary);
+    font-weight: 300;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.project-slider .item .overlay span {
+    font-size: var(--para);
+    color: var(--action);
+    font-weight: 400;
+}
+.project-slider .item .overlay p {
+    font-size: var(--para);
+    color: var(--gray);
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 7px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.project-slider .owl-nav {
+    position: relative;
+    z-index: 99;
+}
+.project-slider .owl-nav .owl-prev {
+    position: absolute;
+    top: -210px;
+    left: 0;
+}
+.project-slider .owl-nav .owl-next {
+    position: absolute;
+    top: -210px;
+    right: 0;
+}
+.project-slider .owl-nav svg {
+    color:var(--black);
+}
+.pro-btn {
+    background: var(--light);
+    color: #000;
+    padding: 10px 30px;
+    border: none;
+    margin-top: auto;
+}
+.pro-btn:hover, .pro-btn:hover:active, .pro-btn:focus {
+    background: var(--light);
+    color: var(--dark);
+}
+
+.project-slider .splide__arrow--next {
+    right: -20px;
+}
+.project-slider .splide__arrow--prev {
+    left: -20px;
+}
+
+
+@media (max-width: 576px){
+    .project-slider .item {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .project-slider .item .overlay {
+        padding: 15px 15px;
+        background: #f8f8f8;
+    }
+    .project-slider .item .overlay h5 {
+        /* font-size: 16px; */
+    }
+    .project-slider .item .overlay span {
+        font-size: 12px;
+    }
+    .project-slider .splide__arrow--next {
+        right: 0px;
+    }
+    .project-slider .splide__arrow--prev {
+        left: 0px;
+    }
+}

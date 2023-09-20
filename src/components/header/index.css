@@ -1,0 +1,188 @@
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 4;
+    background: transparent;
+}
+.brand {
+    width: auto;
+    height: 80px;
+}
+.navbar-brand h1 {
+    color: var(--white);
+    font-size: 35px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 15px;
+}
+.nav-link.navlink {
+    color: var(--gray);
+    padding: 10px 15px;
+}
+.nav-link.navlink.active, .nav-link.navlink:hover {
+    color: var(--action);
+}
+
+
+
+.menu {
+    width: 40px;
+    height: 40px;
+    transition-duration: 0.5s;
+    position: relative;
+}
+.menu .icon-circle {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background: transparent;
+    border: 2px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu .icon {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 2px;
+    width: 22px;
+    top: 19px;
+    left: 9px;
+    background-color: #212121;
+    border-radius: 4px;
+}
+.menu .icon:before {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    background-color: #212121;
+    content: "";
+    top: -7px;
+    border-radius: 4px;
+}
+.menu .icon:after {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    background-color: #212121;
+    content: "";
+    top: 7px;
+    border-radius: 4px;
+}
+.menu.active .icon-circle {
+    background: transparent;
+}
+.menu.active .icon {
+    transition-duration: 0.5s;
+    background: transparent;
+}
+.menu.active .icon:before {
+    transform: rotateZ(45deg) scaleX(1) translate(5px, 5px);
+}
+.menu.active .icon:after {
+    transform: rotateZ(-45deg) scaleX(1) translate(5px, -5px);
+}
+.menu:hover {
+    cursor: pointer;
+}
+
+
+.nav_right {
+    display: flex;
+    align-items: center;
+}
+.call-icon-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+.call-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.call-icon-box>.icon {
+    color: var(--white);
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+}
+.call-icon-box>a {
+    color: var(--white);
+}
+
+@media (max-width: 992px){
+    header.navbar {
+        background: transparent;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .brand {
+        height: 60px;
+        width: auto;
+    }
+    .call-icon-box{
+        min-width: 140px;
+    }
+    .nav_right {
+        margin-right: 30px;
+        margin-left: auto;
+    }
+    .call-icon-box>a,
+    .call-icon-box>.icon {
+        color: var(--dark);
+    }
+    .navbar-collapse {
+        position: absolute;
+        right: 0;
+        background: #fff;
+        top: 90%;
+        max-width: 220px;
+        padding: 25px 0;
+        transition: all ease .3s;
+        transform: translateY(-100%);
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    }
+    .navbar-collapse.show {
+        opacity: 1;
+        height: auto;
+        transform: translateY(0);
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 5px 0;
+    }
+    .navbar-nav .nav-link {
+        color: #000;
+    }
+    .navbar > .container {
+        align-items: baseline;
+    }
+    .menu {
+        width: 26px;
+        height: 26px;
+        margin-top: 15px;
+    }
+    .menu .icon-circle {
+        width: 26px;
+        height: 26px;
+        border: 0;
+    }
+    .menu .icon {
+        height: 2px;
+        width: 22px;
+        top: 12px;
+        left: 2px;
+    }
+}
+@media (max-width: 576px){
+    .nav_right {
+        margin-right: 20px;
+    }
+}

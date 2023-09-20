@@ -1,0 +1,145 @@
+.nav-tabs{
+    border: 0;
+}
+.nav-tabs .nav-link{
+    padding: 10px 40px !important;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #020081;
+    color: #020081 !important;
+    background: transparent;
+    width: 250px;
+    margin-left: 10px;
+    border-radius: 6px;
+}
+.nav-tabs .nav-link:hover{ border: 1px solid #020081;}
+.nav-tabs .nav-link.active{
+    color: #fff !important;
+    background: #020081;
+}
+@media (max-width: 767px){
+    .nav-tabs .nav-link {
+        width: 245px;
+    }
+}
+@media (max-width: 534px){
+    .nav-tabs .nav-link {
+        margin-top: 10px;
+    }
+}
+/* ongoing */
+.ongoing{
+    padding: 30px 0;
+}
+.ongoing-box{
+    padding: 20px;
+    background: var(--light-gray);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.ongoing-box img{ max-height: 280px;}
+.ongoing-text h4{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--dark);
+    text-transform: capitalize;
+    padding-bottom: 8px;
+    text-align: left;
+}
+/*.ongoing-text h4 span{
+    font-weight: 700;
+    color: var(--primary);
+}*/
+.ongoing-text p{
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--gray);
+    text-align: left;
+}
+.ongoing-form{
+    padding: 24px;
+    background: #e5e4ff;
+    margin-left: 8px;
+    border-radius: 10px;
+    position: sticky;
+    top: 20px;
+    right: 0;
+}
+.ongoing-form .form-control{
+    padding: 10px 10px;
+    border: none;
+    background: #fff;
+    font-size: 15px;
+    margin-top: 12px;
+    min-height: 52px;
+}
+@media (max-width: 767px){
+    .ongoing-text h4{
+        padding-top: 10px;
+        text-align: center;
+    }
+    .ongoing-btn-box{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* ongoing */
+/* past */
+.past{
+    padding: 30px 0;
+}
+.past-box{
+    padding: 20px;
+    background: var(--light-gray);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.past-box img{max-height: 280px;}
+.past-text h4{
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--dark);
+    text-transform: capitalize;
+    padding-bottom: 8px;
+    text-align: left;
+}
+
+.past-text p{
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--gray);
+    text-align: left;
+}
+.past-form{
+    padding: 24px;
+    background: #e5e4ff;
+    margin-left: 8px;
+    border-radius: 10px;
+    position: sticky;
+    top: 20px;
+    right: 0;
+}
+.past-form .form-control{
+    padding: 10px 10px;
+    border: none;
+    background: #fff;
+    font-size: 15px;
+    margin-top: 12px;
+    min-height: 52px;
+}
+@media (max-width: 767px){
+    .past-text h4{
+        padding-top: 10px;
+        text-align: center;
+    }
+    .past-btn-box{
+        display: flex;
+        justify-content: center;
+    }
+}
+/* past */

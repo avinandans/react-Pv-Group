@@ -1,0 +1,36 @@
+.form {
+    padding: 24px;
+    background: #d0e6fc;
+    border-radius: 10px;
+    position: sticky;
+    top: 20px;
+    right: 0;
+}
+.title {
+    font-size: 26px;
+    font-weight: 300;
+    color: var(--primary);
+    text-transform: capitalize;
+    padding-bottom: 0;
+    text-align: left;
+}
+.small {
+    font-weight: 700;
+    color: var(--primary);
+}
+.desc {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: var(--gray);
+    text-align: left;
+    margin-bottom: 10px;
+}
+.input {
+    padding: 10px 10px;
+    border: none;
+    background: #fff;
+    font-size: 15px;
+    margin-top: 12px;
+    min-height: 52px;
+}

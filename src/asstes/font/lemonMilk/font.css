@@ -1,0 +1,67 @@
+/* cyrillic-ext */
+@font-face {
+    font-family: 'LemonMilk';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(./LEMONMILK-Light.otf) format('opentype');
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'LemonMilk';
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url(./LEMONMILK-LightItalic.otf) format('opentype');
+  }
+  
+  /* cyrillic-ext */
+  @font-face {
+    font-family: 'LemonMilk';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./LEMONMILK-Regular.otf) format('opentype');
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'LemonMilk';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./LEMONMILK-RegularItalic.otf) format('opentype');
+  }
+  
+/* cyrillic-ext */
+  @font-face {
+    font-family: 'LemonMilk';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(./LEMONMILK-Medium.otf) format('opentype');
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'LemonMilk';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url(./LEMONMILK-MediumItalic.otf) format('opentype');
+  }
+  
+  /* cyrillic-ext */
+  @font-face {
+    font-family: 'LemonMilk';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(./LEMONMILK-Bold.otf) format('opentype');
+  }
+  /* cyrillic */
+  @font-face {
+    font-family: 'LemonMilk';
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url(./LEMONMILK-BoldItalic.otf) format('opentype');
+  }
